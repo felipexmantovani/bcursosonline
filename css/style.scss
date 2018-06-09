@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,800');
+$white: white;
+$black: black;
+$azul: #00A3D9;
+$font: "Open Sans";
+
+body{
+  background-color: $white;
+  font-family: $font;
+  font-size: 14px;
+  padding-top: 76px;
+  overflow-x: hidden;
+}
+
+h1{
+  font-size: 2em;
+  font-weight: 800;
+  color: $azul;
+}
+
+section{
+  padding: 50px 0;
+}
+
+footer{
+  padding: 20px 0;
+  overflow-x: hidden;
+  a, p, i{
+    color: $white;
+  }
+  p{
+    margin-bottom: 0;
+  }
+  .text-center{
+    i{
+      font-size: 80px;
+      margin-bottom: 10px;
+    }
+  }
+  ul{
+    margin: 0;
+    li{
+      display: inline-block;
+      margin-left: 10px;
+    }
+    i{
+      transition: all 0.5s;
+      &:hover{
+        color: $azul;
+      }
+    }
+  }
+}
+
+.nav-light{
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.dropdown:hover > .dropdown-menu{
+  display: block
+}
+
+.dropdown-menu{
+  border-top: 5px solid $black;
+}
+
+.carousel-inner{
+  .carousel-item{
+    img{
+      opacity: 0.5;
+    }
+  }
+}
+
+.carousel{
+  background-color: $black;
+}
+
+.carousel-caption{
+  background: rgba(0, 0, 0, 0.5)
+}
+
+.carousel-caption{
+  i{
+    margin-right: 5px
+  }
+}
+
+.card{
+  margin-bottom: 10px;
+  text-align: center;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.1);
+  transition: all 0.5s;
+  &:hover{
+    box-shadow: 0 2px 0 rgba(40,167,69,0.8);
+  }
+  .card-title, p{
+    height: 70px;
+  }
+}
+
+#depoimentos{
+  position: relative;
+  background: url(../image/depoimento.jpg) fixed no-repeat;
+  background-size: cover;
+  i{
+    top: -10px;
+    left: -22px;
+    position: absolute
+  }
+  p{
+    position: relative;
+    color: $white;
+    font-size: 1.25em;
+  }
+  img{
+    margin-bottom: 10px;
+    display: inline-block;
+    border: 5px solid $white;
+    width: 150px;
+  }
+  span{
+    display: block;
+  }
+}
+
+#news{
+  button{
+    &:hover{
+      background-color: $azul;
+      color: $white;
+      border-color: $azul;
+    }
+  }
+}
+
+.interna{
+  padding: 20px 0;
+}
+
+.cursos{
+  .txt{
+    p:last-child{
+      margin-bottom: 0;
+    }
+    strong{
+      font-size: 2em
+    }
+  }
+}
+
+@media (max-width: 420px){
+  #depoimentos{
+    i{
+      display: none;
+    }
+  }
+  header{
+    .navbar-brand{
+      width: 70%;
+      margin-right: 0;
+    }
+  }
+  .carousel-caption{
+    bottom: 15px;
+    h2{
+      font-size: 1em;
+    }
+  }
+}

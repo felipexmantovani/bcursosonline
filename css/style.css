@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,800");
+body {
+  background-color: white;
+  font-family: "Open Sans";
+  font-size: 14px;
+  padding-top: 76px;
+  overflow-x: hidden; }
+
+h1 {
+  font-size: 2em;
+  font-weight: 800;
+  color: #00A3D9; }
+
+section {
+  padding: 50px 0; }
+
+footer {
+  padding: 20px 0;
+  overflow-x: hidden; }
+  footer a, footer p, footer i {
+    color: white; }
+  footer p {
+    margin-bottom: 0; }
+  footer .text-center i {
+    font-size: 80px;
+    margin-bottom: 10px; }
+  footer ul {
+    margin: 0; }
+    footer ul li {
+      display: inline-block;
+      margin-left: 10px; }
+    footer ul i {
+      transition: all 0.5s; }
+      footer ul i:hover {
+        color: #00A3D9; }
+
+.nav-light {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); }
+
+.dropdown:hover > .dropdown-menu {
+  display: block; }
+
+.dropdown-menu {
+  border-top: 5px solid black; }
+
+.carousel-inner .carousel-item img {
+  opacity: 0.5; }
+
+.carousel {
+  background-color: black; }
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5); }
+
+.carousel-caption i {
+  margin-right: 5px; }
+
+.card {
+  margin-bottom: 10px;
+  text-align: center;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.5s; }
+  .card:hover {
+    box-shadow: 0 2px 0 rgba(40, 167, 69, 0.8); }
+  .card .card-title, .card p {
+    height: 70px; }
+
+#depoimentos {
+  position: relative;
+  background: url(../image/depoimento.jpg) fixed no-repeat;
+  background-size: cover; }
+  #depoimentos i {
+    top: -10px;
+    left: -22px;
+    position: absolute; }
+  #depoimentos p {
+    position: relative;
+    color: white;
+    font-size: 1.25em; }
+  #depoimentos img {
+    margin-bottom: 10px;
+    display: inline-block;
+    border: 5px solid white;
+    width: 150px; }
+  #depoimentos span {
+    display: block; }
+
+#news button:hover {
+  background-color: #00A3D9;
+  color: white;
+  border-color: #00A3D9; }
+
+.interna {
+  padding: 20px 0; }
+
+.cursos .txt p:last-child {
+  margin-bottom: 0; }
+.cursos .txt strong {
+  font-size: 2em; }
+
+@media (max-width: 420px) {
+  #depoimentos i {
+    display: none; }
+
+  header .navbar-brand {
+    width: 70%;
+    margin-right: 0; }
+
+  .carousel-caption {
+    bottom: 15px; }
+    .carousel-caption h2 {
+      font-size: 1em; } }
+
+/*# sourceMappingURL=style.css.map */
